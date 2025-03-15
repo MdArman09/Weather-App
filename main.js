@@ -2,7 +2,7 @@ let isCelsius = true;
 
 async function getWeather() {
   const location = document.getElementById("location").value.trim();
-  const apiKey = "d27c700f78824bbe85f165506251403";
+  const apiKey = "YOUR_API_KEY_HERE";
 
   if (!location) {
     document.getElementById("result").innerText = "Please enter a location";
