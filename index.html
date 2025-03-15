@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-page" class="container">
+      <h2>Weather App</h2>
+      <input type="text" id="location" placeholder="Enter any city location" />
+      <button onclick="getWeather()">Get Weather</button>
+      <h3 id="result"></h3>
+      <img id="weather-icon" src="" alt="" style="display: none" />
+      <p id="extra-info"></p>
+      <div id="forecast" class="forecast"></div>
+      <select id="unit-toggle" onchange="toggleTemperatureUnit()">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+      </select>
+    </div>
+
+    <div id="forecast-details" class="container hidden">
+      <h2>Forecast Details</h2>
+      <p id="forecast-date"></p>
+      <p id="forecast-temp"></p>
+      <p id="forecast-feels"></p>
+      <p id="forecast-humidity"></p>
+      <p id="forecast-wind"></p>
+      <p id="forecast-condition"></p>
+      <p id="forecast-sunrise"></p>
+      <p id="forecast-sunset"></p>
+      <p id="forecast-dew"></p>
+      <p id="forecast-visibility"></p>
+      <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+<script src="main.js" defer></script>
+  </body>
+</html>

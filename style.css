@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* .container:hover {
+transform: scale(1.02);
+} */
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background: rgb(11 11 11 / 20%);
+  color: #fff;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+select {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+select:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Get Weather Button */
+button {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background: rgba(255, 0, 64, 0.9);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: rgba(255, 0, 64, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 0, 64, 0.5);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Forecast Section */
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.forecast div {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.forecast div:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Forecast Details */
+#forecast-details {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#forecast-details.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background: darkred;
+}
+
+/* Unit Toggle */
+#unit-toggle {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
